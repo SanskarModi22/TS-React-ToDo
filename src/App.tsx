@@ -11,10 +11,16 @@ const App: React.FC = () => {
     //The argument prevTodos is an array of existing to-do items.
     //The spread operator (...) is used to create a shallow copy of the prevTodos array. This ensures that the original array is not modified directly.
   }
+
+  const todoDeleteHandler = (todoId:string)=>{
+    setTodo(prevTodos=>{
+      return prevTodos.filter(todo=>todo.id!==todoId);
+    });
+  };
   return (
     <div className="App">
       <NewTodo onAddTodo={todoHandler}/>
-      <TodoList items ={todos}/>
+      <TodoList items ={todos} onDelete={todoDeleteHandler}/>
     </div>
   );
 }

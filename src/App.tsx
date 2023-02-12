@@ -1,10 +1,13 @@
-import React from 'react';
+import React ,{useState}from 'react';
 import TodoList from './components/TodoList';
 import NewTodo from './components/NewTodo';
+import { Todo } from './todo.model';
 const App: React.FC = () => {
-  const todos = [{id: 't1', text: 'Finish the course'}]; 
+
+  const [todos,setTodo]=useState<Todo[]>([]);
+  // const todos = [{id: 't1', text: 'Finish the course'}]; 
   const todoHandler = (text:string)=>{
-    console.log(text);
+    setTodo([{id:Math.random().toString(),text:text}]);
   }
   return (
     <div className="App">
@@ -13,6 +16,4 @@ const App: React.FC = () => {
     </div>
   );
 }
-
- 
 export default App;

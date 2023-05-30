@@ -1,7 +1,7 @@
 # TodoList App
 
 This is a simple TodoList application built with React and TypeScript. It allows users to create, update, and delete tasks in a todo list.
-<img width="1069" alt="todoList" src="https://github.com/SanskarModi22/TS-React-ToDo/assets/80542560/d196bd87-6136-42f2-970f-aa11a75607de">
+ <img width="1069" alt="todoList" src="https://github.com/SanskarModi22/TS-React-ToDo/assets/80542560/f2778437-823b-424c-be3f-809b2a02b09b">
 
 ## Features
 
